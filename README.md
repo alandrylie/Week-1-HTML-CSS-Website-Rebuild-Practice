@@ -18,18 +18,19 @@ Today, you are going to rebuild the visual layout of either:
 #### In this project I have used the following from HTML 5 & CSS 3
 + Div
 + Span
-+ UL li
++ ul li
 + button
 + p
-+ Sementic HTML
++ Semantic HTML
 + Class
 + id
-+ display: Flex
++ display: flex
 + display: block
++ display: grid
 + flex-direction
 + justify-content
 + align-items
-+ font-awseome
++ font-awesome
 
 ##### Key takeaways 
 + Dont overthink and waste time trying to get pixel perfect.

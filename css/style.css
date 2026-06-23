@@ -1,0 +1,394 @@
+/*Global Styling */
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    font-size: 14px;
+}
+body {
+    background-color: #fff;
+    color: #000;
+    font-family: EverydaySans, "Helvetica Neue", Helvetica, Arial, sans-serif;
+}
+
+.mainHeader {
+    display: flex;
+    justify-content: center;
+    background-color: #0053e2;
+    height: 84px;
+    padding: 16px 24px;
+}
+
+.headerLogo {
+    display: flex;
+    justify-content: center;
+    width: 52px;
+    height: 52px;
+    padding: 8px;
+    margin-right: 12px;
+}
+.headerLogo img {
+    object-fit: contain;
+    max-width: 100%;
+    height: 36px;
+}
+
+/* Pickup & Delivery Styling*/
+
+.HeaderLeftOuterContainer {
+    width: 314px;
+    height: 52px;
+    padding-left: 10px;
+    padding-right: 12px;
+    border-radius: 2rem;
+    background-color: #002e99;
+}
+.headerLeft {
+    width: 292px;
+    height: 52px;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+.pickupDeliveryButton {
+    width: 292px;
+    height: 32px;
+    border: none;
+    background-color: transparent;
+    display: flex;
+    flex-direction: row;
+    color: #fff;
+}
+
+.headerLeftInnerContainer {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+.headerLeftIcon {
+    display: flex;
+}
+.headerLeftIcon img {
+    margin-right: 12px;
+}
+
+.pickupDelivery {
+    display: flex;
+    flex-direction: column;
+    text-wrap: nowrap;
+    text-align: left;
+}
+.pickup {
+    display: flex;
+
+    font-weight: 700;
+    font-size: 1rem;
+    line-height: 1.5;
+}
+
+.address {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    line-height: 1.25;
+    font-weight: 400;
+}
+.addressSeparator {
+    padding: 0px 4px;
+}
+
+.chevronWrapper {
+    height: 28px;
+    width: 28px;
+
+    padding-top: 2px;
+}
+.chevron {
+    display: inline-block;
+    padding: 3px 0;
+
+    height: 1rem;
+    width: 1rem;
+}
+/* Search styling*/
+.headerCentre {
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    height: 52px;
+    flex-grow: 1;
+    flex-shrink: 1;
+    flex-basis: auto;
+    background-color: #fff;
+    border-radius: 2rem;
+    margin-left: 24px;
+}
+
+.search {
+    display: flex;
+    flex-grow: 1;
+    flex-shrink: 1;
+    flex-basis: auto;
+    height: 52px;
+}
+#searchInput {
+    margin-left: 24px;
+    padding-top: 1px;
+    padding-bottom: 1px;
+    padding-left: 24px;
+    padding-right: 40px;
+    width: 50px;
+    border: 0;
+    flex-grow: 1;
+    flex-shrink: 1;
+    flex-basis: auto;
+    text-align: start;
+    line-height: 1rem;
+    font-size: 1rem;
+}
+
+.searchButton {
+    padding: 0 6px;
+    background-color: transparent;
+    border: none;
+    text-align: center;
+}
+
+/*Header Nav Bar Styling*/
+.headerRight {
+    display: block;
+    margin-left: 16px;
+}
+
+.headerRight ul {
+    display: flex;
+    flex-direction: row;
+    height: 52px;
+    padding: 0;
+    margin-block-start: 0;
+    margin-inline-start: 0;
+    list-style-type: none;
+    color: #fff;
+}
+.headerRight li {
+    display: flex;
+
+    list-style-type: none;
+    margin-left: 1rem;
+    justify-content: center;
+    align-items: center;
+}
+.wrapper {
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-left: 8px;
+}
+.fa-regular.fa-heart {
+    width: 16px;
+    height: 16px;
+}
+
+.reorder {
+    line-height: 17.5px;
+
+    height: 20px;
+}
+.myItems {
+    font-size: 16px;
+    font-weight: 700;
+    line-height: 24px;
+    margin-top: -4px;
+}
+
+.signIn {
+    height: 20px;
+    line-height: 21px;
+}
+
+.account {
+    font-size: 16px;
+    font-weight: 700;
+    height: 24px;
+    line-height: 24px;
+    margin-top: -4px;
+}
+
+#third {
+    display: flex;
+    flex-direction: column;
+}
+.cart {
+    font-weight: 400;
+    height: 10px;
+    text-align: center;
+}
+
+.navColumn {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+/* Main Navigation Styling*/
+
+.mainNavigation {
+    display: flex;
+    height: 48px;
+    background-color: #e9f1fe;
+    padding: 0 24px;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.mainNavigationOuterContainer {
+    display: flex;
+    align-items: center;
+    width: 100%;
+
+    font-weight: 400;
+}
+.bolder {
+    font-weight: 700;
+}
+
+.mainNavigationOuterContainer nav {
+    display: flex;
+}
+.mainNavigationOuterContainer nav ul {
+    display: flex;
+    flex-direction: row;
+    list-style-type: none;
+    background-color: #fff;
+    justify-content: space-between;
+    border-radius: 1rem;
+}
+.mainNavigationOuterContainer li {
+    display: inline-block;
+}
+
+.mainNavigationOuterContainer li a {
+    border-radius: 2rem;
+    padding: 6px 12px;
+    background-color: #fff;
+    text-decoration: none;
+    color: rgb(0, 30, 96);
+}
+.navigationList {
+    display: flex;
+    flex-direction: row;
+    gap: 1rem;
+}
+
+.more {
+    display: flex;
+    margin: auto;
+    background-color: #fff;
+    text-decoration: none;
+    color: rgb(0, 30, 96);
+    border-radius: 2rem;
+    justify-content: center;
+    align-items: center;
+}
+.more a {
+    text-decoration: none;
+    color: rgb(0, 30, 96);
+    margin-left: 8px;
+    padding: 6px 12px;
+}
+
+/*Hero img styles*/
+.hero {
+    justify-content: center;
+    color: #001e60;
+    display: flex;
+    margin: 1rem;
+    border-radius: 2rem;
+}
+
+.hero img {
+    display: flex;
+    object-fit: contain;
+    width: auto;
+    max-width: 100%;
+    border-radius: 2rem;
+    justify-items: center;
+}
+
+/*Shopping Style*/
+.shop {
+    margin-bottom: 16;
+    padding-right: 24px;
+}
+.shop h2 {
+    line-height: 30px;
+    font-size: 24px;
+    margin-left: 1rem;
+    color: #000;
+}
+.shop a {
+    color: #000;
+}
+
+.shopAll {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    padding-right: 24px;
+    margin-bottom: 16px;
+}
+
+.shopDiscount h3 {
+    margin-top: 4px;
+    display: block;
+    margin-left: 1rem;
+    font-weight: 400;
+    color: #b3c7e6;
+}
+
+.shopOuterContainer{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+}
+
+.shopDeals{
+    display: grid;
+    column-gap: 2rem;
+    grid-auto-columns: auto;
+    max-height: fit-content;
+    padding-right: 16px;
+}
+
+.shopDeals .deal{
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    background-color: #041e42;
+    border-radius: 4px;
+    padding: 4px 8px;
+    color: #fff;
+    font-size: 12px;
+    font-weight: 400;
+    height: 16px;
+    width: 40px;
+    text-align: center;
+    
+    
+}
+.shopDeals img{
+    object-fit: cover;
+    width: auto;
+    height: 200px;
+   
+}
+
+footer{
+    background-color: #002e99;
+    color: #fff;
+    font-size: 12px;
+    line-height: 15px;
+    padding-bottom: 28px;
+    padding-top: 8px;
+    height: 51px;
+}
